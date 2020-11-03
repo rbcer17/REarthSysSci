@@ -62,9 +62,9 @@ Now get the climate-station data
 
 ```{r read stations}
 # read stations
-orstations_path <- "/Users/bartlein/Projects/ESSD/data/shp_files/OR/"
+
 orstations_name <- "orstations.shp"
-orstations_file <- paste(orstations_path, orstations_name, sep="")
+orstations_file <- paste(orstations_name, sep="")
 orstations_shp <- readOGR(orstations_file)
 
 # check stations shapefile
