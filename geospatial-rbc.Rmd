@@ -40,9 +40,8 @@ Read two shape files, one of Oreogon county outlines, the other of climate-stati
 
 ```{r read outlines}
 # read county outlines
-otl_path <- "/Users/bartlein/Projects/ESSD/data/shp_files/OR/"
 otl_name <- "orotl.shp"
-otl_file <- paste(otl_path, otl_name, sep="")
+otl_file <- paste(otl_name, sep="")
 orotl_shp <- readOGR(otl_file)
 ```
 
