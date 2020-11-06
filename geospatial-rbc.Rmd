@@ -105,9 +105,8 @@ User the `raster` package to read the vegetation data
 
 ```{r read veg}
 # read potential natural vegetation data sage_veg30.nc:
-vegtype_path <- "/Users/bartlein/Projects/ESSD/data/nc_files/"
 vegtype_name <- "sage_veg30.nc"
-vegtype_file <- paste(vegtype_path, vegtype_name, sep="")
+vegtype_file <- paste(vegtype_name, sep="")
 vegtype <- raster(vegtype_file, varname="vegtype")
 vegtype
 ```
@@ -124,9 +123,8 @@ Read the charcoal data locations:
 
 ```{r read charcoal}
 # read GCDv3 sites
-csv_path <- "/Users/bartlein/Projects/ESSD/data/csv_files/"
 csv_name <- "v3i_nsa_globe.csv"
-csv_file <- paste(csv_path, csv_name, sep="")
+csv_file <- paste(csv_name, sep="")
 gcdv3 <- read.csv(csv_file) 
 str(gcdv3)
 plot(gcdv3$Lon, gcdv3$Lat, pch=16, cex=0.5, col="blue")
