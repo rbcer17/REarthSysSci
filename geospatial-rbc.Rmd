@@ -97,6 +97,7 @@ This example demonstrates how to extract data from a raster for a set of target 
 library(ncdf4)
 library(raster)
 library(rasterVis)
+library(RColorBrewer)
 ```
 
 ## Read the data sets -- source and target ##
